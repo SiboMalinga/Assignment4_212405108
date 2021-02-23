@@ -2,12 +2,12 @@ database:
     image: mysql:5.7
     ports:
         - "33061:3306"
-    command: --init-file /data/application/init.sql
+    command: --init-file /Assignment4_212405108/.github/workflows/Script.sql
     volumes:
-        - ./init.sql:/data/application/init.sql
+        - ./Assignment4_212405108/.github/workflows/Script.sql
     environment:
         MYSQL_ROOT_USER: root
-        MYSQL_ROOT_PASSWORD: secret
-        MYSQL_DATABASE: homestead
+        MYSQL_ROOT_PASSWORD: Sibongile@TUT14
+        MYSQL_DATABASE: myDatabase
         MYSQL_USER: root
-        MYSQL_PASSWORD: secret
+        MYSQL_PASSWORD: Sibongile@TUT14
